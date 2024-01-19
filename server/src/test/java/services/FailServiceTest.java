@@ -1,6 +1,7 @@
 package services;
 
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Assumptions;
 import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
@@ -83,5 +84,20 @@ public class FailServiceTest {
     @Test
     public void meh15() {
         Assertions.assertInstanceOf(Integer.class, "hi");
+    }
+
+    @Test
+    public void meh16() {
+        Assumptions.abort();
+    }
+
+    @Test
+    public void meh17() {
+        Assumptions.assumeTrue(false);
+    }
+
+    @Test
+    public void meh18() {
+        Assumptions.assumeFalse(true);
     }
 }
