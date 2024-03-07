@@ -64,7 +64,7 @@ public class Server {
         Spark.exception(ChessServerException.class, new ChessServerExceptionHandler<>(HttpURLConnection.HTTP_INTERNAL_ERROR));
 
         Spark.awaitInitialization();
-        return Spark.port() + 1;
+        throw new RuntimeException();
     }
 
     public void stop() {
