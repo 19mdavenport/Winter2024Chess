@@ -31,6 +31,7 @@ public class ChessGame {
 
         board.resetBoard();
         active = true;
+        throw new RuntimeException();
     }
 
 
