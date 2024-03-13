@@ -6,7 +6,7 @@ import java.sql.*;
 import java.util.Properties;
 
 public class DatabaseManager {
-    private static final String databaseName;
+    private static String databaseName;
     private static final String user;
     private static final String password;
     private static final String connectionUrl;
