@@ -33,7 +33,7 @@ public abstract class HttpHandler<T> implements Route {
 
         response.status(HttpURLConnection.HTTP_OK);
 
-        return gson.toJson(result);
+        return null;
     }
 
     protected abstract Class<T> getRequestClass();
