@@ -14,6 +14,7 @@ import websocket.WebSocketHandler;
 import java.net.HttpURLConnection;
 
 public class Server {
+    LOLOLOLOLOLOLOLOLOLOLOLOLOL
 
     public static void main(String[] args) {
         new Server().run(8080);
