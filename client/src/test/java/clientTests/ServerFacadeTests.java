@@ -13,9 +13,10 @@ import java.util.stream.Stream;
 
 
 public class ServerFacadeTests {
+    int lol = 0;
     @TestFactory
     public Stream<DynamicTest> lol() {
-        return Stream.generate(() -> DynamicTest.dynamicTest("lol", () -> Assertions.assertTrue(true))).limit(100);
+        return Stream.generate(() -> DynamicTest.dynamicTest("lol" + lol++, () -> Assertions.assertTrue(true))).limit(100);
     }
 
 }
